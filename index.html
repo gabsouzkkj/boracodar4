@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ptbr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Bora codar #04 - Um chat</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="geral">
+        <div id="perfilg">
+            <img src="assets/perfil.svg" class="perfil">
+            <div id="nomeestatus">
+                <p class="nomezin">Gabriel Philippe</p>
+                <div class="status">
+                    <img src="assets/online.svg">
+                    <p>Online</p>
+                </div>
+            </div>
+            <img src="assets/fechar.svg" class="fbotão" onclick="deleteChat()">
+        </div>
+        <div class="chat">
+            <p class="chatda rbalao">Hoje - 11:30</p>
+            <div class="message r">
+                <p class="rbalao">Gabriel Philippe - 11:30</p>
+                <p class="message2 rbalao">Tive uma ideia incrível para um projeto! 😎</p>
+            </div>
+            <div class="message e">
+                <p class="rbalao">Você - 11:30</p>
+                <p class="message2 rbalao">Sério? Me conta mais.</p>
+            </div>
+            <div class="message r">
+                <p class="rbalao">Gabriel Philippe - 11:30</p>
+                <p class="message2 rbalao">E se a gente fizesse um chat moderno e responsivo em apenas uma semana?</p>
+            </div>
+            <div class="message e">
+                <p class="rbalao">Você - 11:32</p>
+                <a class="message2 b" href="https://boracodar.dev/">#boraCodar! 🚀</a>
+            </div>
+            <div class="message e">
+              <p class="rbalao">Você - 11:32</p>
+              <p class="message2 b">😻😻</a>
+          </div><div class="message e">
+              <p class="rbalao">Você - 11:32</p>
+              <p class="message2 b">😻😻</a>
+          </div>
+          <div class="message e">
+              <p class="rbalao">Você - 11:32</p>
+              <p class="message2 b">😻😻</a>
+          </div>
+          <div class="message e">
+            <p class="rbalao">Você - 11:32</p>
+            <p class="message2 b">😻😻</a>
+        </div><div class="message e">
+            <p class="rbalao">Você - 11:32</p>
+            <p class="message2 b">😻😻</a>
+        </div>
+        <div class="message e">
+            <p class="rbalao">Você - 11:32</p>
+            <p class="message2 b">😻😻</a>
+        </div>
+        <div class="message e">
+              <p class="rbalao">Você - 11:32</p>
+              <p class="message2 b">😻😻</a>
+          </div><div class="message e">
+              <p class="rbalao">Você - 11:32</p>
+              <p class="message2 b">😻😻</a>
+          </div>
+          <div class="message e">
+              <p class="rbalao">Você - 11:32</p>
+              <p class="message2 b">😻😻</a>
+          </div>
+        </div>
+
+        <div class="dmessage">
+          <form onsubmit="addNewMessage(event)">
+              <input name="message" id="message" class="rbalao" placeholder="Digite sua mensagem 😻" autocomplete="off">
+              <button>
+                  <img src="assets/enviar.svg" alt="">
+              </button>
+          </form>
+      </div>
+
+    </div>
+</body>
+</html>
